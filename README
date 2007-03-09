@@ -1,0 +1,9 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1818
+
+Many times when I using my old blog system, I fell in bad mood when I have to mix my source code with content, or no support for source code like syntax highlighted. And when I use vims script TOhtml to deal with these thing, I feel that its handy, but still not enough convenient. I have to choose and copy the html code by my hand, then add a something like <quoteblock class=vimblock>(vimblock is a user-defined CSS element, will be mention later) tag to differentiate these code from common <quoteblock>. Its too inconvenient, also seems easy to be done with a script. So I wrote this.  
+
+With this script, pasting syntax code is only: "V"(selection) and ":Yankcode" and ctrl-v in editor.
+
+The script based on TOhtml written by Bram Moolenarr. It convert the current selection to html using 2html, then get the body of html and wrap it with <blockquote class=vimblock>. In the end, it send the wrapped section of syntax code to clipboard for the further use.
+
+Welcome any advice.
